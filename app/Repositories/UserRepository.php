@@ -97,7 +97,7 @@ class UserRepository implements UserRepositoryInterface
             $this->removeAvatar($id);
         
         // Save file to public folder
-        $filePath = $user->id.'.'.$request->file('file')->extension();       
+        $filePath = time().'.'.$request->file('file')->extension();       
         $request->file('file')->move(public_path('avatars'), $filePath);
 
         // Update user object field avatarURL

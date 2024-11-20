@@ -2,8 +2,6 @@
 
 namespace App\Repositories\Contracts;
 
-use App\Models\Family;
-
 interface FamilyRepositoryInterface
 {
     public function getAllFamilies(): object;

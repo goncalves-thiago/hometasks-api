@@ -38,20 +38,20 @@ class UserSeeder extends Seeder
             ]);
         }
 
-        // if(!User::where('email', 'grazivargas@gmail.com')->first()) {
-        //     $superAdmin = User::create([
-        //         'name' => 'Graziele Vargas',
-        //         'email' => 'grazivargas@gmail.com',
-        //         'password' => Hash::make('123456', ['rounds' => 12])
-        //     ]);
-        // }
+        if(!User::where('email', 'grazi@gmail.com')->first()) {
+            $superAdmin = User::create([
+                'name' => 'Graziele Vargas',
+                'email' => 'grazi@gmail.com',
+                'password' => Hash::make('123456', ['rounds' => 12])
+            ]);
+        }
 
-        // if(!User::where('email', 'enzovargas@gmail.com')->first()) {
-        //     $superAdmin = User::create([
-        //         'name' => 'Enzo Vargas',
-        //         'email' => 'enzovargas@gmail.com',
-        //         'password' => Hash::make('123456', ['rounds' => 12])
-        //     ]);
-        // }
+        if(!User::where('email', 'enzo@gmail.com')->first()) {
+            $superAdmin = User::create([
+                'name' => 'Enzo Vargas',
+                'email' => 'enzo@gmail.com',
+                'password' => Hash::make('123456', ['rounds' => 12])
+            ]);
+        }
     }
 }
